@@ -43,9 +43,14 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-a {
+a{
     text-decoration: none;
 }
 .active{
     font-weight: bolder;
+}
+@media(max-width:850px) {
+    .nav{
+        display: none;
+    }
 }
