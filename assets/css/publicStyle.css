@@ -5,7 +5,6 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-
 }
 
 :root {
@@ -30,6 +29,7 @@ body {
     height: 80px;
     background-color: #FFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 9;
 }
 
 .container {
@@ -43,14 +43,28 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.active{
+
+.active {
     font-weight: bolder;
 }
-@media(max-width:850px) {
-    .nav{
-        display: none;
+
+.bar_menu {
+    display: none;
+}
+
+@media(max-width:400) {
+    .container {
+        width: calc(100% - 40px);
+    }
+}
+
+@media(max-width:400px) {
+    .footer-lift-side {
+        text-align: center;
+        align-items: center;
     }
 }
